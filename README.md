@@ -46,6 +46,8 @@ print(annotations)
 
 ```
 
+### Get default values in original coco dataset
+
 ```python
 
 categories = coco_formatter.get_categories()
