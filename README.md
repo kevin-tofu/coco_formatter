@@ -1,6 +1,12 @@
 # coco_formatter
 ## What this repository is going to solve  
 
+
+##
+```
+pip install git+https://github.com/kevin-tofu/coco_formatter.git
+```
+## How to use
 ```
 import coco_formatter
 
