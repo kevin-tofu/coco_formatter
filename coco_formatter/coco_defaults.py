@@ -1,5 +1,5 @@
-
-
+#!/usr/bin/env python3
+# Copyright (c) Kevin-Tofu, koheitech001@gmail.com
 
 def get_licenses():
     ret = [

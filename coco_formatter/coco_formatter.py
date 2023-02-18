@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+# Copyright (c) Kevin-Tofu, koheitech001@gmail.com
 
 from typing import Optional, Tuple, List, Union
 import numpy as np
