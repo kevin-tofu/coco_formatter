@@ -24,3 +24,6 @@ print(annotations)
 
 licenses = coco_formatter.get_licenses()
 print(licenses)
+
+categories = coco_formatter.get_categories()
+print(categories)

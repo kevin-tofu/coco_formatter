@@ -58,8 +58,18 @@ def create_annotation_bbox(
     if segmentation is not None:
         ret['segmentation'] = segmentation
 
-
     return ret
+
+def create_category(
+    id: int, 
+    name: str, 
+    supercategory: str
+):
+    return dict(
+        id = id, 
+        name = name,
+        supercategory = supercategory
+    )
 
 def create_license(
     id: int, 
