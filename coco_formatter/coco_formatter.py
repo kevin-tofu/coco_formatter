@@ -14,7 +14,7 @@ def create_image(
     flickr_url: Optional[str] = None, 
     coco_url: Optional[str] = None, 
     date_captured: Optional[Union[str, datetime.datetime]] = None
-):
+)  -> dict:
     ret = dict(
         id = id,
         width = width,
@@ -43,7 +43,7 @@ def create_annotation_bbox(
     segmentation: Optional[list[list[float]]] = None, 
     iscrowd: Optional[Literal[0, 1]] = None,
     score: Optional[float]
-):
+) -> dict:
     
     iscrowd = 0 if iscrowd is None else iscrowd
     if type(bbox) is np.ndarray:
@@ -68,19 +68,21 @@ def create_annotation_bbox(
 def create_category(
     id: int, 
     name: str, 
-    supercategory: str
-):
-    return dict(
+    supercategory: Optional[str]
+) -> dict:
+    ret = dict(
         id = id, 
         name = name,
-        supercategory = supercategory
     )
+    if supercategory is not None:
+        ret['supercategory'] = supercategory
+    return ret
 
 def create_license(
     id: int, 
     name: str, 
     url: Optional[str] = None
-):
+) -> dict:
 
     ret = dict(
         id = id, 
