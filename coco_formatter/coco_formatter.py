@@ -42,7 +42,7 @@ def create_annotation_bbox(
     bbox: Union[list[float], np.ndarray], 
     segmentation: Optional[list[list[float]]] = None, 
     iscrowd: Optional[Literal[0, 1]] = None,
-    score: Optional[float]
+    score: Optional[float] = None
 ) -> dict:
     
     iscrowd = 0 if iscrowd is None else iscrowd
