@@ -19,7 +19,6 @@ annotations = coco_formatter.create_annotation_bbox(
     area = 131.13131313, 
     bbox = np.array([30.012131, 33.13131, 120.02, 333.123]), 
 )
-
 print(annotations)
 
 licenses = coco_formatter.get_licenses()

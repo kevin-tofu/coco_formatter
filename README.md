@@ -29,4 +29,10 @@ annotations = coco_formatter.create_annotation_bbox(
 
 print(annotations)
 ```
+```
+categories = coco_formatter.get_categories()
+print(categories)
 
+licenses = coco_formatter.get_licenses()
+print(licenses)
+```
