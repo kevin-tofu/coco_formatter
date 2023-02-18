@@ -60,3 +60,17 @@ def create_annotation_bbox(
 
 
     return ret
+
+def create_license(
+    id: int, 
+    name: str, 
+    url: Optional[str] = None
+):
+
+    ret = dict(
+        id = id, 
+        name = name
+    )
+    if url is not None:
+        ret['url'] = url
+    return ret
