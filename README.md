@@ -1,13 +1,27 @@
+
 # coco_formatter
+
 ## What this repository is going to solve  
 
+## How to install
 
-##
-```
+### by pip
+
+```bash
+
 pip install git+https://github.com/kevin-tofu/coco_formatter.git
 ```
-## How to use
+
+### by pip via requirements.txt
+
+```bash
+git+https://github.com/kevin-tofu/coco_formatter.git@main
 ```
+
+## How to use
+
+```python
+
 import coco_formatter
 
 images = coco_formatter.create_image(
@@ -18,7 +32,8 @@ images = coco_formatter.create_image(
 )
 ```
 
-```
+```python
+
 annotations = coco_formatter.create_annotation_bbox(
     id = 0, 
     image_id = 0, 
@@ -28,11 +43,15 @@ annotations = coco_formatter.create_annotation_bbox(
 )
 
 print(annotations)
+
 ```
-```
+
+```python
+
 categories = coco_formatter.get_categories()
 print(categories)
 
 licenses = coco_formatter.get_licenses()
 print(licenses)
+
 ```
