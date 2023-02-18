@@ -20,15 +20,15 @@ def get_install_requires() -> List[str]:
 setup(
     name='coco_formatter',\
     version="v0.0.1",\
-    url='https://github.com/kevin-tofu/MediaHandler',\
-    download_url='https://github.com/kevin-tofu/MediaHandler/releases/tag/v0.0.1',\
+    url='https://github.com/kevin-tofu/coco_formatter',\
+    download_url='https://github.com/kevin-tofu/coco_formatter/releases/tag/v0.0.1',\
     description="",\
     install_requires=get_install_requires(),
-    # install_requires=['fastapi', 'uvicorn', 'wheel'],
+    # install_requires=['numpy', 'wheel'],
     packages=['coco_formatter'],\
     # packages=find_packages(), \
     package_dir = {'coco_formatter': 'coco_formatter'},\
     author='kevin-tofu',\
-    license='MIT', \
+    license='Apache-2.0 license', \
     python_requires='>3.8'
 )
