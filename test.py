@@ -21,3 +21,6 @@ annotations = coco_formatter.create_annotation_bbox(
 )
 
 print(annotations)
+
+licenses = coco_formatter.get_licenses()
+print(licenses)

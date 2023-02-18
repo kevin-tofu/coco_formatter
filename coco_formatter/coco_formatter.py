@@ -27,6 +27,7 @@ def create_image(
     if coco_url is not None:
         ret['coco_url'] = coco_url
     if date_captured is not None:
+        # 2013-11-14 17:02:52
         ret['date_captured'] = date_captured if type(date_captured) is str else str(date_captured)
     
     return ret
