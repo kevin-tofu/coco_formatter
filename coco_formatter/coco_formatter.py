@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Copyright (c) Kevin-Tofu, koheitech001@gmail.com
 
-from typing import Optional, Tuple, List, Union
+from typing import Optional, Union, Literal
 import numpy as np
 import datetime
 
@@ -39,9 +39,9 @@ def create_annotation_bbox(
     image_id: int, 
     category_id: int, 
     area: float, 
-    bbox: Union[List[float], np.ndarray], 
-    segmentation: Optional[List[List[float]]] = None, 
-    iscrowd: Optional[int] = None,
+    bbox: Union[list[float], np.ndarray], 
+    segmentation: Optional[list[list[float]]] = None, 
+    iscrowd: Optional[Literal[0, 1]] = None,
 ):
     
     iscrowd = 0 if iscrowd is None else iscrowd
