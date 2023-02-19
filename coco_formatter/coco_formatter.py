@@ -61,7 +61,7 @@ def create_annotation_bbox(
     if segmentation is not None:
         ret['segmentation'] = segmentation
     if score is not None:
-        ret['score'] = round(score, 1)
+        ret['score'] = round(score, 2)
 
     return ret
 
