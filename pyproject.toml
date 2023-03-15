@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "coco-formatter"
+version = "0.0.2"
+description = "This library provides easy ways of creating and handling COCO format dataset."
+authors = ["kohei <koheitech001@gmail.com>"]
+license = "Apach-2.0"
+readme = "README.md"
+packages = [{include = "coco_formatter"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = ">=1.19.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
