@@ -40,6 +40,11 @@ annotations = coco_formatter.create_annotation_bbox(
 )
 
 print(annotations)
+# can be dump as json text file.
+import json
+fpath_export = "./anns.json"
+with open(fpath_export, 'w') as f:
+    json.dump(annotations, f, indent=2)
 
 ```
 
